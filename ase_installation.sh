@@ -50,8 +50,8 @@ if ! check_python39; then
     cd -
 fi
 
-# Define the virtual environment directory relative to the current directory
-ASE_ENV_DIR=$(pwd)/ase_env
+# Define the virtual environment directory in the home directory
+ASE_ENV_DIR="$HOME/ase_env"
 
 # Create the virtual environment with Python 3.9
 echo "Creating ASE virtual environment in $ASE_ENV_DIR..."
@@ -66,7 +66,7 @@ pip install --upgrade pip
 echo "Installing ASE and dependencies (NumPy, SciPy, Matplotlib)..."
 pip install ase numpy scipy matplotlib
 
-# Add ase_env/bin to PATH in .bashrc using the dynamically determined path
+# Add ase_env/bin to PATH in .bashrc using the permanent path
 echo "Adding ASE to PATH in .bashrc with path: $ASE_ENV_DIR/bin"
 echo "export PATH=\"$ASE_ENV_DIR/bin:\$PATH\"" >> ~/.bashrc
 
@@ -83,4 +83,4 @@ fi
 
 # End of script
 echo "ASE setup complete!"
-
+source ~/.bashrc
