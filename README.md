@@ -28,7 +28,8 @@ For a detailed guide and walkthrough, check out the corresponding video on my Yo
 Also, explore more computational physics tutorials, including:
 
 SIESTA Installation for parallel computing
+https://youtu.be/Zq3Y4RjPqp8
+
 Band Structure & DOS Plotting using Xmgrace
-Custom Gnuplot Scripts for visualizing high-symmetry points and electronic structures
-License
-This repository is licensed under the MIT License.
+https://youtu.be/gghbO03kWCQ
+
